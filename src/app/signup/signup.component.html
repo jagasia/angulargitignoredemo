@@ -1,0 +1,11 @@
+<form [formGroup]="signupForm" class="container-fluid">
+    Id: <input type="text" formControlName="id" class="form-control">
+    Password: <input type="text" formControlName="password" class="form-control">
+    Confirm Password: <input type="text" formControlName="confirmPassword" class="form-control">
+    First Name: <input type="text" formControlName="firstName" class="form-control">
+    Last Name: <input type="text" formControlName="lastName" class="form-control">
+    Role: <input type="text" formControlName="role" class="form-control">
+    <br>
+    <input type="button" value="Sign Up" class="btn btn-success" (click)="signup()" >
+</form>...
+{{ signupForm.value | json}}
